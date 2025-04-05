@@ -38,7 +38,6 @@ public class TeatroMoroVentasV2 {
             System.out.println("1. Comprar entrada");
             System.out.println("2. Salir");
             System.out.print("\n> Seleccione una opción: ");
-            System.out.println("\n >");
             opcionMenu = sc.nextInt();
 
             if (opcionMenu == 1) {
@@ -47,14 +46,12 @@ public class TeatroMoroVentasV2 {
 
                 // Asignación de tarifas en base a edad
                 System.out.println("> Por favor ingrese su edad: ");
-                System.out.println("\n >");
                 edadUsuario = sc.nextInt();
 
                 tTarifa = defineTarifa(edadUsuario, tTarifa);
 
                 // Solicita el número de entradas
                 System.out.print("\n> ¿Cuántas entradas desea comprar? ");
-                System.out.println("\n >");
                 nEntradas = sc.nextInt();
 
                 valorEntrada = calculaValorEntrada(tarifasGeneral, tEntrada, tTarifa, nEntradas, valorEntrada);
